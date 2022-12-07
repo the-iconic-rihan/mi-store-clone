@@ -7,7 +7,7 @@ const HotAccessoriesMenu = () => {
       <Link className="HotAccessoriesLink" to="/music">
         Music Store
       </Link>
-      <Link className="HotAccessoriesLink" to="/smartDevices">
+      <Link className="HotAccessoriesLink" to="/smartDevice">
         Smart Devices
       </Link>
       <Link className="HotAccessoriesLink" to="/home">
