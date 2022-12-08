@@ -11,7 +11,8 @@ import StarProduct from "./components/StarProduct";
 import HotAccessories from "./components/HotAccessories";
 import Videos from "./components/Videos";
 import ProductReviews from "./components/ProductReviews";
-import Banner from './components/Banner.js'
+import Banner from "./components/Banner.js";
+import Footer from './components/Footer.js'
 function App() {
   return (
     <Router>
@@ -88,7 +89,10 @@ function App() {
       <Videos videos={data.videos} />
 
       <Heading text="IN THE PRESS" />
-      <Banner banner={data.banner.end}/>
+
+      <Banner banner={data.banner.end} />
+
+      <Footer support={data.support} />
     </Router>
   );
 }
