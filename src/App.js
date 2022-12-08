@@ -9,6 +9,8 @@ import { default as data } from "./data/data.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StarProduct from "./components/StarProduct";
 import HotAccessories from "./components/HotAccessories";
+import Videos from './components/Videos'
+import ProductReviews from "./components/ProductReviews";
 function App() {
   return (
     <Router>
@@ -21,6 +23,7 @@ function App() {
       <Heading text="HOT ACCESSORIES " />
       <HotAccessoriesMenu />
 
+      {/* routes are used to render another component after any mouse event or click */}
       <Routes>
         <Route
           exact
@@ -75,8 +78,13 @@ function App() {
             />
           }
         />
-     
       </Routes>
+
+      <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews productReviews={data.productReviews} />
+
+      <Heading text="VIDEOS" />
+      <Videos videos={data.videos}/>
     </Router>
   );
 }
