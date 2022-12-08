@@ -88,7 +88,7 @@ const instagramIcon = (
   </svg>
 );
 
-const Footer = ({ support }) => {
+const Footer = ({ footer }) => {
   return (
     <>
       <div className="PreFooter">
@@ -138,8 +138,85 @@ const Footer = ({ support }) => {
         </div>
 
         <div>
-          {facebookIcon} {youtubeIcon} {instagramIcon} {twitterIcon}
+          <a
+            href="https://www.facebook.com/groups/1262818424451729"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {facebookIcon}
+          </a>
+          <a
+            href="https://www.youtube.com/@MiIndiaOfficial"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {youtubeIcon}
+          </a>
+          <a
+            href="https://www.instagram.com/mistore.aizawl/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {instagramIcon}
+          </a>
+          <a
+            href="https://twitter.com/XiaomiIndia"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {twitterIcon}
+          </a>
         </div>
+      </div>
+      <div className="footer">
+        <div>
+          <p>SUPPORT</p>
+          {footer.support.map((item, index) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p>SHOP AND LEARN</p>
+          {footer.shopAndLearn.map((item) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p> RETAIL STORE</p>
+          {footer.retailStore.map((item) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p> ABOUT</p>
+          {footer.aboutUS.map((item) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p> CONTACT US</p>
+          {footer.contactUs.map((item) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+
+        <div>
+          <div>Chat with our Virtual AI Bot(24/7 Live Agent Support)</div>
+          <button>CHAT NOW</button>
+        </div>
+      </div>
+      <div className="footerBorder">
+        <div> Copyright © 2010 - 2021 Xiaomi. All Rights Reserved</div>
       </div>
     </>
   );

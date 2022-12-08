@@ -12,12 +12,24 @@ import HotAccessories from "./components/HotAccessories";
 import Videos from "./components/Videos";
 import ProductReviews from "./components/ProductReviews";
 import Banner from "./components/Banner.js";
-import Footer from './components/Footer.js'
+import Footer from "./components/Footer.js";
+import NavOptions from "./components/NavOPtions";
 function App() {
   return (
     <Router>
       <PreNavbar />
       <Navbar />
+
+      <NavOptions
+        miPhones={data.miPhones}
+        redmiPhones={data.redmiPhones}
+        laptops={data.laptop}
+        tv={data.tv}
+        home={data.home}
+        audio={data.audio}
+        accessoires={data.accessories}
+        fitnessAndLifestyle={data.fitnessAndLifeStyle}
+      />
       <Slider start={data.banner.start} />
       <Offers offer={data.offer} />
       <Heading text="STAR PRODUCTS" />
@@ -92,7 +104,7 @@ function App() {
 
       <Banner banner={data.banner.end} />
 
-      <Footer support={data.support} />
+      <Footer footer={data.footer} />
     </Router>
   );
 }

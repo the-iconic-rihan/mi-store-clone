@@ -10,7 +10,7 @@ const Banner = ({ banner }) => {
             key={item.image}
             id="banner"
             interval={1000}
-            keyboard={true}
+            keyboard="true"
           >
             <img
               className="d-block w-100 "

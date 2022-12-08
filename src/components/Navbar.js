@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
 import { default as data } from "../data/data.json";
-import { Link } from "react-router-dom";
 // link is alternative to anchor tag . a tag load the stuff where as link tag instancly displays the required things without load
 const searchIcon = (
   <svg
@@ -19,34 +18,34 @@ function Navbar() {
   return (
     <div className="nav">
       <div className="logo">
-        <Link to="dsd">
+        <a href="/">
           <img id="logoImage" src={data.logo} alt="NOT" />
-        </Link>
+        </a>
       </div>
-      <Link to="/miphones" className="navlinks">
+      <a href="/miphones" className="navlinks">
         Mi phones
-      </Link>
-      <Link to="/redmiphones" className="navlinks">
+      </a>
+      <a href="/redmiphones" className="navlinks">
         Redmi Phones
-      </Link>
-      <Link to="/tv" className="navlinks">
+      </a>
+      <a href="/tv" className="navlinks">
         TV
-      </Link>
-      <Link to="/laptops" className="navlinks">
+      </a>
+      <a href="/laptops" className="navlinks">
         Laptops
-      </Link>
-      <Link to="/lifestyle" className="navlinks">
+      </a>
+      <a href="/lifestyle" className="navlinks">
         Fitness & Lifestyle
-      </Link>
-      <Link to="/home" className="navlinks">
+      </a>
+      <a href="/home" className="navlinks">
         Home
-      </Link>
-      <Link to="/audio" className="navlinks">
+      </a>
+      <a href="/audio" className="navlinks">
         Radio
-      </Link>
-      <Link to="/accessories" className="navlinks">
+      </a>
+      <a href="/accessories" className="navlinks">
         Accessories
-      </Link>
+      </a>
       <div className="searchBox">
         <input type="search" name="search" placeholder="search products" />
         {searchIcon}

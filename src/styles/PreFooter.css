@@ -85,14 +85,14 @@
 .PreFooter2 > div:nth-child(3) > span {
   width: 14vmax;
 }
-.PreFooter2 > div:nth-child(4) {
+.PreFooter2 > div:nth-child(4)  {
   flex-direction: row;
 }
-.PreFooter2 > div:nth-child(4) > svg {
+.PreFooter2 > div:nth-child(4) > a > svg {
   cursor: pointer;
   margin: 1vmax;
   fill: rgba(138, 138, 138, 0.705);
 }
-.PreFooter2 > div:nth-child(4) > svg:hover {
+.PreFooter2 > div:nth-child(4) > a > svg:hover {
   fill: rgb(94, 94, 94);
 }
