@@ -9,8 +9,9 @@ import { default as data } from "./data/data.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StarProduct from "./components/StarProduct";
 import HotAccessories from "./components/HotAccessories";
-import Videos from './components/Videos'
+import Videos from "./components/Videos";
 import ProductReviews from "./components/ProductReviews";
+import Banner from './components/Banner.js'
 function App() {
   return (
     <Router>
@@ -84,7 +85,10 @@ function App() {
       <ProductReviews productReviews={data.productReviews} />
 
       <Heading text="VIDEOS" />
-      <Videos videos={data.videos}/>
+      <Videos videos={data.videos} />
+
+      <Heading text="IN THE PRESS" />
+      <Banner banner={data.banner.end}/>
     </Router>
   );
 }
