@@ -27,6 +27,17 @@
   text-decoration: none;
 }
 .preNav > div > a:hover,
-.preNav > div svg {
+.preNav > div {
   color: white;
+}
+.humberger > svg {
+  height: 20px;
+  margin: auto 0.5vmax;
+  display: none;
+}
+
+@media only screen and (max-width: 728px) {
+  .humberger > svg {
+    display: block;
+  }
 }
